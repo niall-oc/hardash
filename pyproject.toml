@@ -1,0 +1,32 @@
+[build-system]
+requires = [
+    "setuptools",
+    "poetry"
+]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "src"
+]
+
+[tool.poetry]
+documentation = "https://hardash.readthedocs.io/en/latest/"
+repository = "https://github.com/niall-oc/hardash"
+
+[project]
+name = "hardash"
+requires-python = ">=3.7"
+readme = "README.md"
+authors = [
+  { name="Niall O'Connor", email="zechs.marquie@gmail.com" },
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+version = "0.0.1"
+dependencies = [
+    "pyharmonics"
+]
